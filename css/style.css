@@ -24,6 +24,7 @@ h3 {
     color: #11999E
 }
 hr {
+    display: inline-block;
     width: 25%;
     border: dotted grey 6px;
     border-bottom: none;
@@ -33,36 +34,20 @@ p {
 }
 
 /* Class Selectors */
-.nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #9ED2C6;
-}
-.nav_list {
-    float: right;
-}
-.nav_list a {
-    display: block; 
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-.nav_list a:hover {
-    background-color: #54BAB9;
-}
-
-/* top-container */
 .top-container {
     background-color: #9ED2C6;
     text-align: center;
     position: relative;
     margin-top: 0;
 }
+.navbar{
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
+.nav-item {
+    padding: 0 18px;
+}
 
-/* main */
 .profile {
     width: 50%;
     margin: 20px auto 20px auto;
@@ -70,10 +55,10 @@ p {
 .image {
     float:left;
     margin-right: 20px;
-    width: 50px;
-    height: 50px;
+    width: 80px;
 }
 .row {
+    display:block;
     width: 50%;
     margin: 20px auto 20px auto;
     text-align: left;
@@ -124,6 +109,9 @@ p {
 .project-img-1 {
     width: 30%;
 }
+.project-img-2 {
+    width: 70%;
+}
 
 
 
@@ -137,4 +125,14 @@ footer {
 }
 .copyright{
     color: white;
+}
+
+
+@media (max-width: 800px) {
+    .profile, .row, .contact-me, .project {
+        width: 80%;
+    }
+    .project-img-1  {
+        width: 50%;
+    }
 }
